@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    text-align: center;
+    margin: 3rem;
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+
+}
+
+.container{
+    margin: auto;
+    border: 2px solid #373636;
+    box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
+    width: 350px;
+    height: 400px;
+    text-align: center;
+    border-radius: 8px;
+    
+}
+
+.keys{
+    display: grid;
+    grid-template-columns: repeat(4, 2rem);
+    grid-gap: 20px 30px;
+    margin-left: 3rem;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.button{
+    padding: 6px;
+    width: 50px;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 2px;
+    background-color: transparent;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.1) inset;
+}
+
+.operator{
+    background-color: rgb(233, 198, 59);
+    color: #fff;
+    width: 50px;
+    border: 1px solid black;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.input-field{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.screen{
+    padding: 6px 10px;
+    background-color: rgb(146, 224, 224);
+    margin: 6px;
+    text-align: center;
+}
+
+.clear{
+    padding: 2px 20px;
+    background-color: #e97777;
+    color: #fff;
+    border-radius: 1px solid;
+    border-radius: 3px;
+
+}
+
+.clear:hover{
+    background-color: #cd6767;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+ #equal{
+    background-color: rgb(73, 175, 231);
+ }
+
+ #equal:hover{
+    background-color: rgb(22, 137, 198);
+ }
+
+.button:hover{
+    cursor: pointer;
+    background-color: #dad2d2;
+    border: 2px solid black;
+}
+
+.operator:hover{
+    cursor: pointer;
+    background-color: rgb(183, 154, 37);
+    border: 2px solid black;
+}
+
+.footer{
+    text-align: center;
+    margin-top: 4rem;
+    font-family: 'Courier New', Courier, monospace;
+
+}
