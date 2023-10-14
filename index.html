@@ -13,11 +13,9 @@
         <table class="input-field">
             <tr>
                 <td>
-                    <input type="text" class="screen">
-                        <div class="previousOperand"></div>
-                        <div class="currentOperand"></div>
+                    <input type="text" class="screen" disabled>
                 </td>
-                <td><input type="button" value="C" class="clear"></td>
+                <td><input type="button" value="AC" class="clear"></td>
             </tr>
         </table>
         <div class="keys">
@@ -35,11 +33,12 @@
             <input type="button" value="-" class="operator">
             <input type="button" value="0" class="button">
             <input type="button" value="." class="button">
-            <input type="button" value="=" class="operator" id="equal">
+            <input type="button" value="=" id="equal">
             <input type="button" value="+" class="operator">
+            <input type="button" value="DEL" id="delete">
         </div>
     </div>
-    <!-- <p class="footer">Made by Arisha</p> -->
+    <p class="footer">Made by Arisha</p>
     <script src="script.js"></script>   
 </body>
 </html>

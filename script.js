@@ -3,44 +3,35 @@ const operatorBtns = document.querySelectorAll(".operator");
 const clearBtn = document.querySelector(".clear");
 const equalBtn = document.querySelector("#equal");
 const inputField = document.querySelector(".screen");
-const previousOperandEl = document.querySelector(".previousOperand");
-const currentOperandEl = document.querySelector(".currentOperand");
+const deleteBtn = document.querySelector("#delete");
 
 // display numbers
 numberBtns.forEach(button => {
     button.addEventListener("click", function(e){
-    // console.log(e.target.value);
-    inputField.innerHTML += e.target.value;
-     
+    inputField.value += e.target.value;   
     })
     
 });
 
+// display operators
+operatorBtns.forEach(button => {
+    button.addEventListener("click", function(e){
+    inputField.value += e.target.value;   
+    })
+    
+});
 
 // calculation
-
-// const calcNumber = function(previousOperand, currentOperand, operator){
-//     switch (operator) {
-//         case "+":
-//             previousOperand + currentOperand;
-//             break;
-//         case "-":
-//             previousOperand - currentOperand;
-//             break;
-//         case "*":
-//             previousOperand * currentOperand;
-//             break;
-//         case "/":
-//             previousOperand / currentOperand;
-//             break;        
-//         default:
-//             `Enter valid operator;`
-//             break;
-//     }
-// }
-//  console.log(calcNumber(2,3,"+"));
+equalBtn.addEventListener('click', function(){
+    inputField.value = eval(inputField.value)
+});
 
 // clear the input field
-// clearBtn.addEventListener("click", function(){
-//     inputField.value = "";
-// });
+clearBtn.addEventListener("click", function(){
+    inputField.value = "";
+});
+
+// delete the last number
+deleteBtn.addEventListener("click", function(){
+    inputField.value = inputField.value.slice(0,-1);
+})
